@@ -1,0 +1,14 @@
+[project]
+name = "foundry-model-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+	"azure-identity>=1.17.0",
+	"azure-ai-inference>=1.0.0b1",  # Azure Foundry / Inference SDK (beta acceptable for testing)
+	"openai>=1.30.0",               # For Responses API via Azure endpoint
+	"aiohttp>=3.9.0",               # Raw HTTP calls
+	"python-dotenv>=1.0.0"          # Load environment variables from .env
+	,"rich>=13.7.0"               # Colored console output for debugging (rprint)
+]
